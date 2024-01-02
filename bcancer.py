@@ -25,7 +25,7 @@ accuracy = accuracy_score(y_test, y_pred)
 print(f"Précision du modèle : {accuracy:.2f}")
 
 # Sauvegarder le modèle entraîné
-with open('breast_cancer_model.pkl', 'wb') as file:
+with open('model.pkl', 'wb') as file:
     pickle.dump(model, file)
 
 print("Modèle entraîné et sauvegardé.")
