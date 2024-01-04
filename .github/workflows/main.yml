@@ -1,4 +1,4 @@
-name: ML Model CI
+name: ML Model CI 2
 
 on: [push]
     
