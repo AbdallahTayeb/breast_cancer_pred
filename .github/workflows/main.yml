@@ -57,4 +57,5 @@ jobs:
       env:
         SEUIL: vars.SEUIL
       run: |
+        echo $SEUIL
         python test.py
