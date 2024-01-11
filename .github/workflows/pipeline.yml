@@ -54,8 +54,12 @@ jobs:
         path: .
 
     - name: Test Model
+      env:
+        SEUIL: ${{ vars.SEUIL }}
       run: |
+        echo $SEUIL
         python test.py
+
 
   deploy:
     needs: test
