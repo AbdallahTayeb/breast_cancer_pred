@@ -55,7 +55,7 @@ jobs:
 
     - name: Test Model
       env:
-        SEUIL: 1
+        SEUIL: ${{ vars.SEUIL }}"
       run: |
         echo $SEUIL
         python test.py
