@@ -54,5 +54,7 @@ jobs:
         path: .
 
     - name: Test Model
+      env:
+        SEUIL: vars.SEUIL
       run: |
         python test.py
