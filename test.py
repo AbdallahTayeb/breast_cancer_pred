@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import pickle
 from sklearn.metrics import accuracy_score
@@ -19,7 +20,7 @@ accuracy = accuracy_score(y_test, y_pred)
 print(f"Précision du modèle : {accuracy:.2f}")
 
 # Définir un seuil de classification
-seuil_classification = os.environ('SEUIL')
+seuil_classification = float(os.environ.get('SEUIL'))
 
 # Vérifier si le seuil est atteint
 if accuracy >= seuil_classification:
